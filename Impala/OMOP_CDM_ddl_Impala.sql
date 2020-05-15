@@ -629,7 +629,7 @@ CREATE TABLE cost (
  payer_plan_period_id INTEGER,
  amount_allowed DECIMAL(19,4), -- NUMERIC
  revenue_code_concept_id INTEGER,
- reveue_code_source_value VARCHAR(50),
+ revenue_code_source_value VARCHAR(50),
  drg_concept_id			INTEGER,
  drg_source_value		VARCHAR(3)
 )
