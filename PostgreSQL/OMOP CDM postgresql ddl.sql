@@ -315,7 +315,7 @@ CREATE TABLE visit_occurrence
 	 visit_source_concept_id		INTEGER			NULL ,
 	 admitting_source_concept_id	INTEGER			NULL ,
 	 admitting_source_value			VARCHAR(50)		NULL ,
-	 discharge_to_concept_id		INTEGER(50)		NULL ,
+	 discharge_to_concept_id		INTEGER		NULL ,
 	 discharge_to_source_value		VARCHAR(50)		NULL ,
 	 preceding_visit_occurrence_id	INTEGER			NULL
     ) 
@@ -465,7 +465,8 @@ CREATE TABLE note_nlp
   note_id						INTEGER			NOT NULL ,
   section_concept_id			INTEGER			NULL ,
   snippet						VARCHAR(250)	NULL ,
-  offset						VARCHAR(250)	NULL ,
+  --OFFSET is reserved postgres keyword and as workarrond should be lowercase and in double quotes
+  "offset"						VARCHAR(250)	NULL ,
   lexical_variant				VARCHAR(250)	NOT NULL ,
   note_nlp_concept_id			INTEGER			NULL ,
   note_nlp_source_concept_id	INTEGER			NULL ,
