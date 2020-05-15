@@ -11,7 +11,7 @@ In order to create your instantiation of the Common Data Model, we recommend fol
 
 3. Load your data into the schema.
 
-4. Execute the script `OMOP CDM postgresql indexes required.sql` to add the minimum set of indexes and primary keys we recommend.
+4. Execute the script `OMOP CDM postgresql indexes.sql` to add the minimum set of indexes and primary keys we recommend.
 
 5. Execute the script `OMOP CDM postgresql constraints.sql` to add the constraints (foreign keys). 
 
